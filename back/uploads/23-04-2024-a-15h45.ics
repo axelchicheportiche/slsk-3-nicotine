@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:DAYLIGHT
+DTSTART:20240331T030000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:CEST
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20241027T020000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:CET
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20240423T084536Z
+UID:50677251-c7ff-41ea-bb95-17714a5a0493
+DTSTART;TZID=Europe/Paris:20240423T154500
+DTEND;TZID=Europe/Paris:20240423T160000
+CLASS:PRIVATE
+DESCRIPTION:Informations pratiques :\n* Au Rez-de-chaussée\n* Sans ascense
+ ur\n* Avec entrée accessible\n\nPour annuler ou déplacer votre RDV\, cli
+ quez sur le lien ci-dessous :\nhttps://www.doctolib.fr/sessions/anonymous/
+ T5zEo2Qe\n\nVia Doctolib
+GEO:48.8867424;2.3670218
+LOCATION:2 Rue Paul Laurent\, 75019 Paris
+ORGANIZER;CN=Doctolib:mailto:<no-reply@doctolib.fr>
+PRIORITY:2
+SUMMARY:RDV chez Dr Delphine BROSSARD
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT2H
+DESCRIPTION:Informations pratiques :\n* Au Rez-de-chaussée\n* Sans ascense
+ ur\n* Avec entrée accessible\n\nPour annuler ou déplacer votre RDV\, cli
+ quez sur le lien ci-dessous :\nhttps://www.doctolib.fr/sessions/anonymous/
+ T5zEo2Qe\n\nVia Doctolib
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P2D
+DESCRIPTION:Informations pratiques :\n* Au Rez-de-chaussée\n* Sans ascense
+ ur\n* Avec entrée accessible\n\nPour annuler ou déplacer votre RDV\, cli
+ quez sur le lien ci-dessous :\nhttps://www.doctolib.fr/sessions/anonymous/
+ T5zEo2Qe\n\nVia Doctolib
+END:VALARM
+END:VEVENT
+END:VCALENDAR
